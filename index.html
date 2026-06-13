@@ -160,7 +160,38 @@ Player 4<br>
 </div>
 
 </div>
+let p1=0;
+let p2=0;
+let p3=0;
+let p4=0;
 
+function movePlayer(player){
+
+if(player===1){
+p1+=20;
+document.getElementById("r1").style.marginLeft=p1+"px";
+if(p1>=300) alert("🏆 Player 1 Wins!");
+}
+
+if(player===2){
+p2+=20;
+document.getElementById("r2").style.marginLeft=p2+"px";
+if(p2>=300) alert("🏆 Player 2 Wins!");
+}
+
+if(player===3){
+p3+=20;
+document.getElementById("r3").style.marginLeft=p3+"px";
+if(p3>=300) alert("🏆 Player 3 Wins!");
+}
+
+if(player===4){
+p4+=20;
+document.getElementById("r4").style.marginLeft=p4+"px";
+if(p4>=300) alert("🏆 Player 4 Wins!");
+}
+
+}
 <script>
 
 function startGame(){
